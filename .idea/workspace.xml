@@ -2,21 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0b10fcf-dc31-40df-a310-49231909c488" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/assets/images/blogerIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/blog/blog.controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/api/blog/blog.controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/blog/blog.controller.spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/blog/blog.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/blog/blog.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/blog/blog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/api/blog/blog.model.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/api/blog/blog.socket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/api/blog/blog.spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/api/blog/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.html" afterPath="$PROJECT_DIR$/client/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/navbar/navbar.controller.js" afterPath="$PROJECT_DIR$/client/components/navbar/navbar.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/routes.js" afterPath="$PROJECT_DIR$/server/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/config/socketio.js" afterPath="$PROJECT_DIR$/server/config/socketio.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="blogspot.iws" />
@@ -288,6 +273,13 @@
       <option name="number" value="Default" />
       <updated>1428488163872</updated>
     </task>
+    <task id="LOCAL-00001" summary="Set Html of blog post project">
+      <created>1428508951139</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1428508951139</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -314,13 +306,13 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6365188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6365188" sideWeight="0.13095239" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.90102386" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3993174" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6365188" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6365188" sideWeight="0.86904764" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6911263" sideWeight="0.3638393" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7440273" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -337,6 +329,7 @@
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
+    <option name="SHOW_DETAILS" value="false" />
     <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
     </option>
@@ -351,6 +344,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Set Html of blog post project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Set Html of blog post project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
