@@ -5,6 +5,9 @@ angular.module('blogpostApp')
     $scope.menu = [{
       'title': 'Home',
       'link': '/'
+    },{
+      'title': 'Blog',
+      'link': '/blog'
     }];
 
     $scope.isCollapsed = true;
