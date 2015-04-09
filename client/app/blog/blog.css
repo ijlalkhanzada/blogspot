@@ -72,46 +72,40 @@ img{
   text-decoration: none;
   color: #337ab7;
 }
-
 .sidebar-nav li a:hover {
   text-decoration: none;
   color: #000000;
   background: rgba(255, 255, 255, 0.86);
 }
-
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
   text-decoration: none;
 }
-
 .sidebar-nav > .sidebar-brand {
   height: 65px;
   font-size: 18px;
   line-height: 60px;
 }
-
 .sidebar-nav > .sidebar-brand a {
   color: #337ab7;
 }
-
 .sidebar-nav > .sidebar-brand a:hover {
   color: #000000;
   background: none;
 }
-
 @media(min-width:768px) {
   #wrapper {
     padding-left: 250px;
   }
-
   #wrapper.toggled {
     padding-left: 0;
   }
-
   #sidebar-wrapper {
     width: 250px;
   }
-
+  #menu-toggle{
+  transform: rotate(-180deg);
+  }
   #wrapper.toggled #sidebar-wrapper {
     width: 0;
   }
@@ -126,12 +120,16 @@ img{
     margin-right: 0;
   }
   #textarea{
-    width: 90%;
+    width: 60%;
     margin: 0 auto;
   }
   #textarea textarea{
     width: 100%;
     height: 600px;
     margin: 0 auto;
+  }
+  #test{
+    /*float: left;*/
+    width: 100%;
   }
 }
