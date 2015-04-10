@@ -1,9 +1,9 @@
 <div id="wrapper">
   <!-- Sidebar -->
   <div ng-include="'components/navbar/navbar2.html'"></div>
-  <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
-    <span class="glyphicon glyphicon-arrow-left"></span>
-    <span class="glyphicon glyphicon-arrow-right"></span> </a>
+  <a href="#menu-toggle" class="btn btn-default arrow" id="menu-toggle">
+    <span class="glyphicon glyphicon-arrow-right arrow-img rotate-reset"></span>
+  </a>
   <div id="page-content-wrapper">
     <div id="textarea">
       <h1>Simple Blog Post</h1>
@@ -13,28 +13,6 @@
         <button class="btn btn-warning">Preview</button>
         <button class="btn btn-warning">Close</button>
       </span>
-
-
-      <div  id="test">
-      <div class="bs-example" data-example-id="hoverable-table">
-        <table class="table table-hover">
-          <thead>
-          <tr>
-            <th><input type="checkbox" ng-model="selectedAll" ng-click="checkAll()"></th>
-            <th>Blog</th>
-          </tr>
-          </thead>
-          <tbody ng-repeat="thing in awesomeThings">
-          <tr>
-              <td scope="row"><input type="checkbox" ng-model="thing.Selected"></td>
-         <td><a href="#">{{thing.name | limitTo : 80}}  </a> </td>
-          </tr>
-          </tbody>
-        </table>
-      </div>
-
-      </div>
-
 
      <p></p>
       <p></p>

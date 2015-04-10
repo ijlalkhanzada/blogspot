@@ -18,6 +18,8 @@ function onConnect(socket) {
   });
 
   // Insert sockets below
+  require('../api/viewPost/viewPost.socket').register(socket);
+  require('../api/savePost/savePost.socket').register(socket);
   require('../api/blog/blog.socket').register(socket);
   require('../api/thing/thing.socket').register(socket);
 }
