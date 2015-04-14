@@ -1,0 +1,16 @@
+.red{
+  background:url("../../assets/images/nature-background.jpg") !important;
+
+}
+a{
+  color: white;
+}
+a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+tr:hover {
+  background-color: #56B0C8 !important;
+  color: white;
+}

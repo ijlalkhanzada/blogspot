@@ -1,34 +1,34 @@
+
 <div id="wrapper">
-  <!-- Sidebar -->
+
+
+
+
+
   <div ng-include="'components/navbar/navbar2.html'"></div>
   <a href="#menu-toggle" class="btn btn-default arrow" id="menu-toggle">
     <span class="glyphicon glyphicon-arrow-right arrow-img rotate-reset"></span>
   </a>
+
   <div id="page-content-wrapper">
+    <div ng-include="'components/navbar/navbar.html'" ></div>
     <div id="textarea">
+      <!--<div ng-include="'components/navbar/navbar.html'"></div>-->
       <h1>Simple Blog Post</h1>
       <span class="P66RVY-M-f">
         <button class="btn btn-warning">Publish</button>
         <button class="btn btn-warning"  ng-click="addThing()" data-toggle="modal" data-target=".bs-example-modal-lg">Save</button>
         <button class="btn btn-warning">Preview</button>
-        <button class="btn btn-warning">Close</button>
+        <button class="btn btn-warning" ui-sref="savePost">Close</button>
       </span>
-
      <p></p>
       <p></p>
       <p></p>
-      <a  name="/textarea">
-          <textarea ng-model="blogTextArea"></textarea>
-      </a>
-
+      <div text-angular ng-model="htmlVariable"></div>
+      <audio controls>
+        <source src="../../assets/images/01%20-%20Sab%20Aakho%20Ali%20Ali%20-%20S07E01.mp3">
+      </audio>
     </div>
   </div>
-  <footer class="footer">
-    <div class="container">
-      <p>Angular Fullstack v2.0.13 |
-        <a href="https://twitter.com/tyhenkel">@tyhenkel</a> |
-        <a href="https://github.com/DaftMonk/generator-angular-fullstack/issues?state=open">Issues</a></p>
-    </div>
-  </footer>
 </div>
 

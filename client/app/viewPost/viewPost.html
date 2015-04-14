@@ -1,4 +1,46 @@
-<div class="col-md-6">
-<h1>This is the viewPost view.</h1>
+<!--<div ng-include="'components/navbar/navbar2.html'"></div>-->
+<div ng-include="'components/navbar/navbar.html'"></div>
+<div class="container">
+<div class="container">
+  <div class="col-lg-10">
+    <div class="wrapper">
+      <div class="header-inner" ng-controller="NavbarCtrl" >
+        <h1 class="title"  ng-show="isLoggedIn()" title="Blog Title"><a href="#">{{ getCurrentUser().title}}</a> </h1>
+      </div>
+      <div class="descriptionwrapper">
+        <p class="description"><span>I am a person who is positive about every aspect of life. There are many things I like to do, to see, and to experience. I like to read, I like to write; </span></p>
+      </div>
+      <div class="region-inner main-inner">
+        <!--<h3>Heder</h3>-->
+        <div class="blog-posts hfeed">
+          <div class="status-msg-wrap">
+            <div class="status-msg-body">
+              Sorry, the page you were looking for in this blog does not exist.
+            </div>
+            <div class="status-msg-border">
+              <div class="status-msg-bg">
+                <div class="status-msg-hidden">
+                  Sorry, the page you were looking for in this blog does not exist.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
 
+      </div>
+        <div class="footer-outer">
+        <div class="footer-inner">
+          <p>disadhsandsagdbsajgdbaud</p>
+          <p>disadhsandsagdbsajgdbaud</p>
+          <p>disadhsandsagdbsajgdbaud</p>
+          <p>disadhsandsagdbsajgdbaud</p>
+        </div>
+        </div>
+    </div>
+  </div>
 </div>
+</div>
+
+
+

@@ -8,11 +8,11 @@ angular.module('blogpostApp')
       console.log('Get Blog ):',awesomeThings)
     });
     $scope.addThing = function() {
-      if(!$scope.blogTextArea) {
+      if(!$scope.htmlVariable) {
         console.log('adddthing');
         return false;
       }
-      $http.post('/api/savePosts', { name: $scope.blogTextArea}).success( function(){
+      $http.post('/api/savePosts', { name: $scope.htmlVariable}).success( function(){
         $state.go('savePost')
         $http.get('/api/savePosts').success(function(awesomeThings) {
 
@@ -21,8 +21,8 @@ angular.module('blogpostApp')
           console.log('Get Blog ):',awesomeThings)
         });
       });
-      $scope.blogTextArea = '';
-      console.log('Save Blog ):',$scope.blogTextArea)
+      $scope.htmlVariable = '';
+      console.log('Save Blog ):',$scope.htmlVariable)
     };
     $scope.deleteThing = function() {
       $http.delete('/api/blogs').success(function(){
@@ -46,7 +46,7 @@ angular.module('blogpostApp')
     $scope.addView = function(id) {
       $state.go('viewPost');
       console.log('view Posts');
-      if(!$scope.blogTextArea) {
+      if(!$scope.htmlVariable) {
         return false;
       }
       $http.get('/api/viewPosts' ).success(function(awesomeThings) {

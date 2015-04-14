@@ -1,8 +1,8 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 
 <div class="container">
-  <div class="row">
-    <div class="col-sm-12">
+  <div class="row" id="login">
+    <div class="col-sm-12" id="login_heading">
       <h1>Change Password</h1>
     </div>
     <div class="col-sm-12">
@@ -29,10 +29,13 @@
             Password must be at least 3 characters.
           </p>
         </div>
+<div id="login_button">
 
-        <p class="help-block"> {{ message }} </p>
+  <p class="help-block"> {{ message }} </p>
 
-        <button class="btn btn-lg btn-primary" type="submit">Save changes</button>
+  <button class="btn btn-lg btn-primary" type="submit">Save changes</button>
+    </div>
+
       </form>
     </div>
   </div>

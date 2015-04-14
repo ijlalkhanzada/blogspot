@@ -2,6 +2,7 @@
 
 angular.module('blogpostApp')
   .controller('BlogCtrl', function ($scope,$http,$modal, $log,$state) {
+    angular.element('body').removeClass('red');
     $scope.message = 'Hello';
 
     /****************************************jQuery Function for toggle Nave Start**********************************/
@@ -21,18 +22,18 @@ angular.module('blogpostApp')
         console.log('Get Blog ):',awesomeThings)
       });
       $scope.addThing = function() {
-        if(!$scope.blogTextArea) {
+        if(!$scope.htmlVariable) {
           console.log('adddthing');
           return false;
         }
-        $http.post('/api/savePosts', { name: $scope.blogTextArea}).success( function(){
+        $http.post('/api/savePosts', { name: $scope.htmlVariable}).success( function(){
           $http.get('/api/blogs').success(function(awesomeThings) {
             $scope.awesomeThings = awesomeThings;
             console.log('Get Blog ):',awesomeThings)
           });
           $state.go('savePost')
         });
-        $scope.blogTextArea = '';
-        console.log('Save Blog ):',$scope.blogTextArea)
+        $scope.htmlVariable = '';
+        console.log('Save Blog ):',$scope.htmlVariable)
       };
   });

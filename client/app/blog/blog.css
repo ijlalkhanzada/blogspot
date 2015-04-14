@@ -73,9 +73,9 @@ img{
   color: #337ab7;
 }
 .sidebar-nav li a:hover {
-  text-decoration: none;
-  color: #000000;
-  background: rgba(255, 255, 255, 0.86);
+  /*text-decoration: none;*/
+  /*color: #000000;*/
+  /*background: rgba(255, 255, 255, 0.86);*/
 }
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
@@ -90,57 +90,61 @@ img{
   color: #337ab7;
 }
 .sidebar-nav > .sidebar-brand a:hover {
+  /*color: #000000;*/
+  /*background: none;*/
+}
+#wrapper {
+  padding-left: 250px;
+}
+#wrapper.toggled {
+  padding-left: 0;
+}
+#sidebar-wrapper {
+  width: 250px;
+}
+#menu-toggle{
+  transform: rotate(-180deg);
+}
+#wrapper.toggled #sidebar-wrapper {
+  width: 0;
+}
+
+#page-content-wrapper {
+  padding: 0;
+  position: relative;
+}
+
+#wrapper.toggled #page-content-wrapper {
+  position: relative;
+  margin-right: 0;
+}
+#textarea{
+  width: 600px;
+  margin: 0 auto;
+}
+#textarea textarea{
+  min-width: 0px;
+  direction: ltr;
+  text-align: left;
+  width: 653px;
+  height: 1100px;
+}
+#test{
+  float: right;
+  width: 85%;
+}
+.rotate {
+  transform: rotate(-180deg);
+  /*transform: rotate(180deg);*/
+  transition: .3s;
+}
+.rotate-reset {
+  transform: rotate(0deg);
+  transition: .3s;
+}
+textarea{
   color: #000000;
-  background: none;
 }
 @media(min-width:768px) {
-  #wrapper {
-    padding-left: 250px;
-  }
-  #wrapper.toggled {
-    padding-left: 0;
-  }
-  #sidebar-wrapper {
-    width: 250px;
-  }
-  #menu-toggle{
-  transform: rotate(-180deg);
-  }
-  #wrapper.toggled #sidebar-wrapper {
-    width: 0;
-  }
 
-  #page-content-wrapper {
-    padding: 20px;
-    position: relative;
-  }
-
-  #wrapper.toggled #page-content-wrapper {
-    position: relative;
-    margin-right: 0;
-  }
-  #textarea{
-    width: 600px;
-    margin: 0 auto;
-  }
-  #textarea textarea{
-    min-width: 0px;
-    direction: ltr;
-    text-align: left;
-    width: 653px;
-    height: 1100px;
-  }
-  #test{
-    float: right;
-    width: 85%;
-  }
-  .rotate {
-    transform: rotate(-180deg);
-    /*transform: rotate(180deg);*/
-    transition: .3s;
-  }
-  .rotate-reset {
-    transform: rotate(0deg);
-    transition: .3s;
-  }
 }

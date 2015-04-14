@@ -1,1 +1,28 @@
+#login{
+  width: 30%;
+  margin: 50px auto;
+  background:white;
+  border-top: 2px solid #1C6F9B;
+  border-bottom: 2px solid ghostwhite;
+  border-radius: 5px;
+  color: black;
 
+}
+#login_heading{
+  background: #1C6F9B;
+  margin: 0 0 30px 0;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+#login_button{
+  margin-bottom: 30px;
+}
+h1{
+  margin: 0;
+  padding: 20px;
+  font-size: 30px;
+}
+h1 span{
+  padding: 0 10px;
+}

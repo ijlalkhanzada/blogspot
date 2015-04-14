@@ -30,10 +30,20 @@
 /**
  * App-wide Styles
  */
-
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
+}
+.navbar-text{
+  color: white;
+  font-size: 20px;
+  }
+.navbar-text:hover{
+  background-color: rgb(61, 157, 182) !important;
+  text-decoration: underline;
+}
+audio{
+  width: 100%;
 }
