@@ -1,6 +1,5 @@
 .red{
-  background:url("../../assets/images/nature-background.jpg") !important;
-
+  background:url("../../assets/images/nature-background.jpg")repeat-x fixed top center !important;
 }
 a{
   color: white;

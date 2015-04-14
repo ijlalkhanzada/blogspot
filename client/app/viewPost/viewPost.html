@@ -5,22 +5,35 @@
   <div class="col-lg-10">
     <div class="wrapper">
       <div class="header-inner" ng-controller="NavbarCtrl" >
+
         <h1 class="title"  ng-show="isLoggedIn()" title="Blog Title"><a href="#">{{ getCurrentUser().title}}</a> </h1>
+        <div class="descriptionwrapper">
+          <p class="description" ng-show="isLoggedIn()"><span>{{ getCurrentUser().description }}</span></p>
+        </div>
       </div>
-      <div class="descriptionwrapper">
-        <p class="description"><span>I am a person who is positive about every aspect of life. There are many things I like to do, to see, and to experience. I like to read, I like to write; </span></p>
-      </div>
+
+        <!--<p ><span>I am a person who is positive about every aspect of life. There are many things I like to do, to see, and to experience. I like to read, I like to write; </span></p>-->
+
       <div class="region-inner main-inner">
+        <h3>
+          {{awesomeThings.date | dateFilter}}
+        </h3>
+        <h6>
+
+        {{awesomeThings.date | date:'hh:mm:ss'}}
+
+      </h6>
         <!--<h3>Heder</h3>-->
         <div class="blog-posts hfeed">
           <div class="status-msg-wrap">
-            <div class="status-msg-body">
-              Sorry, the page you were looking for in this blog does not exist.
-            </div>
+
+            <!--<div class="status-msg-body" >-->
+              <!--&lt;!&ndash;Sorry, the page you were looking for in this blog does not exist.&ndash;&gt;-->
+            <!--</div>-->
             <div class="status-msg-border">
               <div class="status-msg-bg">
-                <div class="status-msg-hidden">
-                  Sorry, the page you were looking for in this blog does not exist.
+                <div class="testi">
+                  <Span ng-bind-html="awesomeThings.name"></Span>
                 </div>
               </div>
             </div>
@@ -31,10 +44,12 @@
       </div>
         <div class="footer-outer">
         <div class="footer-inner">
-          <p>disadhsandsagdbsajgdbaud</p>
-          <p>disadhsandsagdbsajgdbaud</p>
-          <p>disadhsandsagdbsajgdbaud</p>
-          <p>disadhsandsagdbsajgdbaud</p>
+
+          <!--<p>disadhsandsagdbsajgdbaud</p>-->
+          <!--<p>disadhsandsagdbsajgdbaud</p>-->
+          <!--<p>disadhsandsagdbsajgdbaud</p>-->
+          <!--<p>disadhsandsagdbsajgdbaud</p>-->
+
         </div>
         </div>
     </div>

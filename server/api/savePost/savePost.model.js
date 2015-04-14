@@ -6,7 +6,8 @@ var mongoose = require('mongoose'),
 var SavePostSchema = new Schema({
   name: String,
   blogTextArea: String,
-  active: Boolean
+  active: Boolean,
+  date: Date
 });
 
 module.exports = mongoose.model('SavePost', SavePostSchema);

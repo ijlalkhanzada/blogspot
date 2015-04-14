@@ -100,7 +100,7 @@ img{
   padding-left: 0;
 }
 #sidebar-wrapper {
-  width: 250px;
+  width: 251px;
 }
 #menu-toggle{
   transform: rotate(-180deg);
@@ -147,4 +147,7 @@ textarea{
 }
 @media(min-width:768px) {
 
+}
+h1{
+  color: white;
 }

@@ -2,6 +2,8 @@
 
 angular.module('blogpostApp')
   .controller('SavePostCtrl', function ($scope,$http,$state,filterFilter) {
+    angular.element('body').removeClass('red');
+
     $scope.message = 'Hello';
     $http.get('/api/savePosts').success(function(awesomeThings) {
       $scope.awesomeThings = awesomeThings;
@@ -11,9 +13,13 @@ angular.module('blogpostApp')
       if(!$scope.htmlVariable) {
         console.log('adddthing');
         return false;
+
       }
+      $scope.date = new Date();
       $http.post('/api/savePosts', { name: $scope.htmlVariable}).success( function(){
+
         $state.go('savePost')
+
         $http.get('/api/savePosts').success(function(awesomeThings) {
 
           $scope.awesomeThings = awesomeThings;
@@ -44,18 +50,8 @@ angular.module('blogpostApp')
       });
     };
     $scope.addView = function(id) {
-      $state.go('viewPost');
+      $state.go('viewPost',{id: id});
       console.log('view Posts');
-      if(!$scope.htmlVariable) {
-        return false;
-      }
-      $http.get('/api/viewPosts' ).success(function(awesomeThings) {
-        $scope.awesomeThings = awesomeThings;
-        console.log('Get View ):',awesomeThings)
-      });
-
-
-
     };
     function deletePost(index){
       $http.delete('/api/savePosts/' + $scope.awesomeThings[index]._id).success(function(){

@@ -10,6 +10,7 @@ angular.module('blogpostApp')
 
       if(form.$valid) {
         Auth.createUser({
+          description: $scope.user.description,
           title: $scope.user.title,
           name: $scope.user.name,
           email: $scope.user.email,
@@ -17,6 +18,7 @@ angular.module('blogpostApp')
         })
         .then( function() {
             console.log('Title:',$scope.user.title)
+            console.log('Description:',$scope.user.description)
 
             // Account created, redirect to home
           $location.path('/');

@@ -6,6 +6,8 @@ var mongoose = require('mongoose'),
 var BlogSchema = new Schema({
   name: String,
   blogTextArea: String,
+  description: String,
+
   active: Boolean
 });
 

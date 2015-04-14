@@ -6,7 +6,9 @@ var mongoose = require('mongoose'),
 var ViewPostSchema = new Schema({
   name: String,
   blogTextArea: String,
-  active: Boolean
+  active: Boolean,
+  description: String,
+  date: Date
 });
 
 module.exports = mongoose.model('ViewPost', ViewPostSchema);

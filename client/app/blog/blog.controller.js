@@ -26,7 +26,7 @@ angular.module('blogpostApp')
           console.log('adddthing');
           return false;
         }
-        $http.post('/api/savePosts', { name: $scope.htmlVariable}).success( function(){
+        $http.post('/api/savePosts', { name: $scope.htmlVariable, date: new Date()}).success( function(){
           $http.get('/api/blogs').success(function(awesomeThings) {
             $scope.awesomeThings = awesomeThings;
             console.log('Get Blog ):',awesomeThings)
