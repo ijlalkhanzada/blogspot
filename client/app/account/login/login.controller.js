@@ -1,15 +1,15 @@
 'use strict';
 
 angular.module('blogpostApp')
-  .controller('LoginCtrl', function ($scope, Auth, $location) {
+  .controller('LoginCtrl', function ($scope, Auth, $location,$timeout) {
     $scope.user = {};
     $scope.errors = {};
 
     $scope.login = function(form) {
       $scope.submitted = true;
-
-      if(form.$valid) {
-        Auth.login({
+      console.log('submitted')
+        if(form.$valid) {
+          Auth.login({
           email: $scope.user.email,
           password: $scope.user.password
         })

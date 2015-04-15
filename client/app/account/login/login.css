@@ -26,3 +26,12 @@ h1{
 h1 span{
   padding: 0 10px;
 }
+#proseguir{
+  text-align: center;
+
+}
+#proseguir i{
+  width: 300px;
+  font-size: 50px;
+  color: #A8D7DF;
+}
