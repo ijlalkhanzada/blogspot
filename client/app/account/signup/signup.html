@@ -68,7 +68,12 @@
           </p>
         </div>
         <div id="login_button">
-          <button class="btn btn-inverse btn-lg btn-login" type="submit">
+          <div>
+            <button class="btn btn-primary" ng-file-select="" ng-file-change="upload($files)" type="button">Upload Image</button>
+          </div>
+          <img ng-src="{{images}}">
+          <br>
+          <button class="btn btn-inverse btn-lg btn-login">
             Sign up
           </button>
           <a class="btn btn-default btn-lg btn-register" href="/login">
@@ -76,6 +81,7 @@
           </a>
         </div>
       </form>
+
+</div>
     </div>
   </div>
-</div>

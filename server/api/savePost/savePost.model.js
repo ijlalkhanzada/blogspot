@@ -7,6 +7,7 @@ var SavePostSchema = new Schema({
   name: String,
   blogTextArea: String,
   active: Boolean,
+  image: String,
   date: Date
 });
 

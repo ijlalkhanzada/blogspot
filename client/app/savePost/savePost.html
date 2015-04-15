@@ -1,30 +1,32 @@
 <div ng-include="'components/navbar/navbar2.html'"></div>
 <div ng-include="'components/navbar/navbar.html'"></div>
 
-
 <div class="container">
-
   <div class="col-md-12">
   <div  id="test">
-
-
   <div class="bs-example" data-example-id="hoverable-table">
-    <table class="table">
+    <div ng-if="!awesomeThings.length">
+      <h1>No posts.</h1>
+    </div>
+    <table class="table" ng-show="awesomeThings.length">
       <thead>
       <tr>
         <th><input id="checkBox" type="checkbox" ng-model="selectedAll" ng-click="checkAll()"></th>
         <th>Blog</th>
+        <th>Blog Serial</th>
       </tr>
       </thead>
       <tbody ng-repeat="thing in awesomeThings">
       <tr>
         <td scope="row"><input type="checkbox" ng-model="thing.Selected"></td>
         <td><a href="" ng-click="addView(thing._id)"  ng-bind-html="thing.name | limitTo : 80"> </a> </td>
+        <td>{{$index +1}}</td>
       </tr>
       </tbody>
     </table>
   </div>
   </div>
-</div>
-</div>
 
+
+</div>
+</div>

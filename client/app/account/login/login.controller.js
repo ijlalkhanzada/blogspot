@@ -7,8 +7,10 @@ angular.module('blogpostApp')
 
     $scope.login = function(form) {
       $scope.submitted = true;
-      console.log('submitted')
+
         if(form.$valid) {
+          console.log('submitted', $scope.submitted)
+
           Auth.login({
           email: $scope.user.email,
           password: $scope.user.password
@@ -18,7 +20,7 @@ angular.module('blogpostApp')
           $location.path('/blog');
         })
         .catch( function(err) {
-          $scope.errors.other = err.message;
+              $scope.errors.other = err.message;
         });
       }
     };

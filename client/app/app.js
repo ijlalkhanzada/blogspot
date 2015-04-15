@@ -2,12 +2,13 @@
 
 angular.module('blogpostApp', [
   'ngCookies',
-  'ngResource',
   'ngSanitize',
+  'ngResource',
   'btford.socket-io',
   'ui.router',
   'ui.bootstrap',
   'textAngular',
+  'angularFileUpload',
   'ngSanitize'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {

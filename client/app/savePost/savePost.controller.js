@@ -2,13 +2,14 @@
 
 angular.module('blogpostApp')
   .controller('SavePostCtrl', function ($scope,$http,$state,filterFilter) {
-    angular.element('body').removeClass('red');
 
+    angular.element('body').removeClass('red');
     $scope.message = 'Hello';
     $http.get('/api/savePosts').success(function(awesomeThings) {
       $scope.awesomeThings = awesomeThings;
       console.log('Get Blog ):',awesomeThings)
     });
+
     $scope.addThing = function() {
       if(!$scope.htmlVariable) {
         console.log('adddthing');
@@ -43,6 +44,7 @@ angular.module('blogpostApp')
 
       } else {
         $scope.selectedAll = false;
+        console.log('Selected');
       }
 
       angular.forEach($scope.awesomeThings,function(item){
@@ -54,6 +56,12 @@ angular.module('blogpostApp')
       console.log('view Posts');
     };
     function deletePost(index){
+      $http.delete('/api/savePosts/' + $scope.awesomeThings[index]._id).success(function(){
+        console.log('ssssssssssss')
+        $scope.awesomeThings.splice(index, 1);
+      });
+    }
+    function editPost(index){
       $http.delete('/api/savePosts/' + $scope.awesomeThings[index]._id).success(function(){
         console.log('ssssssssssss')
         $scope.awesomeThings.splice(index, 1);
